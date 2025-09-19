@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin } from "lucide-react";
-
+import Link from "next/link";
 export default function ContactPage() {
   return (
     <main className="bg-gray-50 min-h-screen py-16">
@@ -34,7 +34,9 @@ export default function ContactPage() {
                 <label htmlFor="message" className="block mb-1 font-medium">Message</label>
                 <Textarea id="message" placeholder="Your Message" rows={5} />
               </div>
+              <Link href="/#">
               <Button type="submit" className="w-full mt-2">Send Message</Button>
+              </Link>
             </form>
           </div>
 

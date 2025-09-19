@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 export default function AboutPage() {
   return (
     <main className="bg-gray-50">
@@ -10,12 +10,12 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative w-full h-[400px] mb-16">
         <Image
-          src="/images/about-hero.jpg"
+          src="/images/kevin-laminto-0ZPlUMo2lis-unsplash.jpg"
           alt="About Us"
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-center justify-center text-center text-white px-4">
+        <div className="absolute inset-0  bg-opacity-40 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">About Dressify</h1>
           <p className="text-lg md:text-xl">
             Fashion. Style. Comfort. Our story begins with a passion for clothing.
@@ -68,9 +68,11 @@ export default function AboutPage() {
         <p className="mb-6">
           Sign up for updates, exclusive offers, and the latest fashion trends.
         </p>
+        <Link href="/#">    
         <Button className="bg-white text-black hover:bg-gray-100">
           Subscribe Now
         </Button>
+        </Link>
       </section>
 
     </main>

@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 const menCloths = [
-  { id: 1, title: "Denim Jacket", price: "₹2,799", image: "/images/men-denim.jpg" },
-  { id: 2, title: "White Shirt", price: "₹1,199", image: "/images/men-shirt.jpg" },
-  { id: 3, title: "Formal Suit", price: "₹5,999", image: "/images/men-suit.jpg" },
-  { id: 4, title: "Hoodie", price: "₹1,499", image: "/images/men-hoodie.jpg" },
+  { id: 1, title: "Denim Jacket", price: "₹2,799", image: "/images/hamid-tajik-_LKtLlEpx1c-unsplash.jpg" },
+  { id: 2, title: "White Shirt", price: "₹1,199", image: "/images/mohamad-khosravi-Ll6ggwPpKIo-unsplash.jpg" },
+  { id: 3, title: "Formal Suit", price: "₹5,999", image: "/images/mohamad-khosravi-7I0umiKzwgc-unsplash.jpg" },
+  { id: 4, title: "Hoodie", price: "₹1,499", image: "/images/mehrab-zahedbeigi-nEfI2ff2SLU-unsplash.jpg" },
  
 ];
 
@@ -24,16 +24,18 @@ export default function MenPage() {
           <p className="text-lg md:text-xl">
             Bold, stylish, and crafted for the modern man.
           </p>
+       
           <Button className="bg-white text-black w-40 hover:bg-gray-200">
             Shop Now
           </Button>
+ 
         </div>
         <div className="md:w-1/2 relative h-80 md:h-full mt-8 md:mt-0">
           <Image
-            src="/images/men-hero2.jpg"
+            src="/images/vytenis-malisauskas-CiPxyCRM9ck-unsplash.jpg"
             alt="Men Fashion"
             fill
-            className="object-cover rounded-xl shadow-lg"
+            className="object-contain rounded-xl shadow-lg"
           />
         </div>
       </section>
@@ -59,7 +61,9 @@ export default function MenPage() {
         <div className="p-4">
           <h3 className="font-semibold">{item.title}</h3>
           <p className="text-gray-600">{item.price}</p>
+         
           <Button className="mt-3 w-full">Add to Cart</Button>
+       
         </div>
       </div>
     ))}
@@ -74,7 +78,9 @@ export default function MenPage() {
             Seasonal Sale – Up to 40% Off
           </h2>
           <p className="text-lg mb-4">Grab your favorite styles before they're gone!</p>
+   
           <Button className="bg-white text-black hover:bg-gray-200">Shop Sale</Button>
+       
         </div>
       </section>
 
@@ -82,7 +88,7 @@ export default function MenPage() {
       <section className="container mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="relative h-96 md:h-[400px]">
           <Image
-            src="/images/men-casual.jpg"
+            src="/images/nathan-b-WuTy05fm-_o-unsplash.jpg"
             alt="Casual Wear"
             fill
             className="object-cover rounded-xl shadow-lg"
@@ -93,9 +99,11 @@ export default function MenPage() {
           <p className="text-gray-700">
             Explore our collection of casual shirts, tees, and pants designed for comfort and style. Perfect for daily wear or weekend outings.
           </p>
+       
           <Button className="bg-black text-white hover:bg-gray-800 w-48 mt-4">
             Explore Collection
           </Button>
+ 
         </div>
       </section>
 

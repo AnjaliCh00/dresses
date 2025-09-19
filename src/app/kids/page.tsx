@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-
+import Link from "next/link";
 const kidsCloths = [
-  { id: 1, title: "T-Shirt for Boys", price: "₹499", image: "/images/kids-tshirt.jpg" },
-  { id: 2, title: "Dress for Girls", price: "₹799", image: "/images/kids-dress.jpg" },
-  { id: 3, title: "Casual Shorts", price: "₹399", image: "/images/kids-shorts.jpg" },
-  { id: 4, title: "Jacket", price: "₹1,199", image: "/images/kids-jacket.jpg" },
+  { id: 1, title: "T-Shirt for Boys", price: "₹499", image: "/images/vitaliy-zalishchyker-3Ank_q_qVtE-unsplash.jpg" },
+  { id: 2, title: "Dress for Girls", price: "₹799", image: "/images/vitaliy-zalishchyker-J5OqaJ14X90-unsplash.jpg" },
+  { id: 3, title: "Casual Shorts", price: "₹399", image: "/images/terricks-noah-n9R0MN3XGvY-unsplash.jpg" },
+  { id: 4, title: "Jacket", price: "₹1,199", image: "/images/jonathan-borba-z7bAGX8pjvE-unsplash.jpg" },
 ];
 
 export default function KidsPage() {
@@ -17,21 +17,23 @@ export default function KidsPage() {
       {/* Section 1: Hero Banner */}
       <section className="relative w-full h-[400px] mb-12">
         <Image
-          src="/images/kids-hero.jpg"
+          src="/images/alvin-mahmudov-0XJZBnwNYNg-unsplash.jpg"
           alt="Kids Fashion"
           fill
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center text-center text-white px-4">
+        <div className="absolute inset-0  bg-opacity-30 flex flex-col items-center justify-center text-center text-white px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">
             Kids’ Collection
           </h1>
           <p className="text-lg md:text-xl">
             Playful, Comfortable & Stylish Outfits for Your Little Ones
           </p>
+      
           <Button className="mt-6 bg-white text-black hover:bg-gray-200">
             Shop Now
           </Button>
+     
         </div>
       </section>
 
@@ -51,7 +53,9 @@ export default function KidsPage() {
               <div className="p-4 text-center">
                 <h3 className="font-semibold">{item.title}</h3>
                 <p className="text-gray-600">{item.price}</p>
+          
                 <Button className="mt-3 w-full">Add to Cart</Button>
+         
               </div>
             </div>
           ))}
@@ -65,7 +69,9 @@ export default function KidsPage() {
             Summer Fun Sale – Up to 30% Off
           </h2>
           <p className="text-lg mb-4">Bright and colorful styles for every kid!</p>
+ 
           <Button className="bg-white text-black">Shop Sale</Button>
+
         </div>
       </section>
 
@@ -73,7 +79,7 @@ export default function KidsPage() {
       <section className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="relative h-80 md:h-[400px]">
           <Image
-            src="/images/kids-play.jpg"
+            src="/images/stephen-andrews-pSX5yzOfPjw-unsplash.jpg"
             alt="Playtime Outfits"
             fill
             className="object-cover rounded-xl shadow-lg"
@@ -84,9 +90,11 @@ export default function KidsPage() {
           <p className="text-gray-700">
             Soft fabrics, vibrant colors, and fun designs that let your kids move, play, and explore in style. Perfect for school, parties, and casual outings.
           </p>
+     
           <Button className="bg-black text-white w-48 mt-4">
             Explore Collection
           </Button>
+      
         </div>
       </section>
 
