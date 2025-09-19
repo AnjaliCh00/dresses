@@ -31,7 +31,7 @@ export default function Home() {
     caption: "Discover elegant ethnic wear for every occasion",
   },
   {
-    src: "/images/nonresident-EBzryfLWHTc-unsplash.jpg",
+    src: "/images/pexels-harsh-kushwaha-804217-4411911.jpg",
     alt: "Designer Kurta",
     caption: "Stand out with our exclusive designer kurtas",
   },
@@ -209,7 +209,7 @@ const menCloths = [
   <div className="container mx-auto px-4">
     {/* Section Heading */}
     <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-      👔 Men’s Collection
+       Men’s Collection
     </h2>
 </div>
     {/* Product Grid */}
